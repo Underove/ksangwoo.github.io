@@ -2,102 +2,75 @@
 <html lang="ko">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Sangwoo Kim | AI & Robotics Engineer</title>
+  <title>Sangwoo Kim | Portfolio</title>
   <meta name="author" content="Sangwoo Kim">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
   <style>
-    /* 무채색 스타일 가이드 */
-    :root {
-      --bg-color: #ffffff;
-      --text-main: #24292f;
-      --text-header: #000000;
-      --text-sub: #57606a;
-      --border-color: #eaecef;
-      --entry-hover: #f6f8fa;
-    }
-
+    /* 폰트 및 글자 크기, 색상 정의 */
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text-main);
-      background-color: var(--bg-color);
-      margin: 0;
-      padding: 0;
+      font-family: 'Inter', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px; /* 레퍼런스 표준 크기 */
+      color: #333;
+      background-color: #ffffff;
+      margin: 0; padding: 0;
     }
-
-    table { border-collapse: separate; border-spacing: 0; }
-    a { color: #333; text-decoration: none; font-weight: 500; }
-    a:hover { color: #000; text-decoration: underline; }
-
-    .name { font-size: 2.2rem; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 10px; color: var(--text-header); }
-    h2 { font-size: 1.5rem; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
-
-    .entry-row { transition: background 0.2s ease; }
-    .entry-row:hover { background-color: var(--entry-hover); }
-    .papertitle { font-weight: 700; font-size: 1.05rem; color: var(--text-header); display: block; margin-bottom: 4px; }
-    .tech-stack { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.85rem; color: var(--text-sub); margin: 4px 0; }
+    a { color: #111; text-decoration: none; font-weight: 600; }
+    a:hover { color: #5dade2; text-decoration: underline; } /* 링크 호버 시 연한 하늘색 */
     
-    ul { margin: 5px 0; padding-left: 18px; list-style-type: square; font-size: 0.95rem; }
-    li { margin-bottom: 4px; }
+    .name {
+      font-family: 'Inter', sans-serif;
+      font-size: 32px; /* 레퍼런스 이름 크기 */
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      color: #000;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      border-bottom: 2px solid #5dade2; /* 섹션 구분선 연한 하늘색 */
+      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #111;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .papertitle { font-weight: 700; color: #000; font-size: 15px; }
+    
+    /* 영어 Bio 강조용 */
+    strong { color: #000; font-weight: 600; }
 
-    .award-tag { background: #eee; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; margin-left: 5px; }
+    ul { margin: 5px 0; padding-left: 18px; list-style-type: square; }
+    li { margin-bottom: 4px; line-height: 1.5; }
+    
+    table { width: 100%; border: 0; border-spacing: 0; border-collapse: separate; }
+    .main-table { max-width: 800px; margin: 0 auto; }
+    .project-img { width: 180px; height: 100px; object-fit: cover; border-radius: 6px; border: 1px solid #eee; }
   </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:850px;margin:40px auto;border:0;">
+  <table class="main-table">
     <tbody>
       <tr>
-        <td style="padding:2.5%;width:65%;vertical-align:middle">
-          <p class="name">Sangwoo Kim (김상우)</p>
-          <p>
-            I am an engineer focused on bridging the gap between theoretical AI models and physical systems. 
-            Specializing in <strong>3D Reconstruction</strong> and <strong>Agentic AI</strong>, 
-            I excel at optimizing complex algorithms to run efficiently on edge devices and real hardware.
-          </p>
-          <p style="text-align:left">
-            <a href="mailto:swjohn0121@gmail.com">Email</a> &nbsp;/&nbsp;
-            <a href="https://github.com/Underove" target="_blank">Github</a> &nbsp;/&nbsp;
-            <a href="tel:010-7378-4886">Contact</a>
-          </p>
-        </td>
-        <td style="padding:2.5%;width:35%;text-align:right">
-          <img src="images/profile.jpg" style="width:100%;max-width:200px;border-radius:12px;border:1px solid #eee;" alt="profile">
-        </td>
-      </tr>
-
-      <tr>
-        <td colspan="2" style="padding:20px 10px 10px 10px">
-          <h2>Experience & Awards</h2>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <table style="width:100%;border:0;">
-            <tr class="entry-row">
-              <td style="padding:15px;width:100%">
-                <span class="papertitle">투빅스(ToBig's) 인공지능 및 빅데이터 연합동아리</span>
-                제23기 운영부장 및 운영진 수료 [cite: 15-16]
+        <td style="padding: 40px 2.5% 20px 2.5%;">
+          <table>
+            <tr>
+              <td style="width:63%; vertical-align:middle; padding-right: 20px;">
+                <p class="name">Sangwoo Kim</p>
+                <p>
+                  I am an engineer focused on bridging the gap between theoretical AI models and physical systems. 
+                  Specializing in <strong>3D Reconstruction</strong> and <strong>Agentic AI</strong>, 
+                  I excel at optimizing complex algorithms to run efficiently on edge devices and real hardware.
+                </p>
+                <p style="text-align:left; margin-top: 20px;">
+                  <a href="mailto:swjohn0121@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Underove" target="_blank">Github</a> &nbsp;/&nbsp;
+                  <a href="tel:010-7378-4886">Contact</a>
+                </p>
               </td>
-            </tr>
-            <tr class="entry-row">
-              <td style="padding:15px;width:100%">
-                <span class="papertitle">LG Aimers 7기 해커톤 <span class="award-tag">최종 5위</span></span>
-                전국 800여 팀 중 본선 진출 및 식음업장 수요 예측 모델 개발 [cite: 17-18, 94]
-              </td>
-            </tr>
-            <tr class="entry-row">
-              <td style="padding:15px;width:100%">
-                <span class="papertitle">중앙대학교 항공우주 동아리 MACH</span>
-                12기 회전익(드론) 제어팀 활동 및 비행 안정성 제어 시스템 연구 [cite: 13-14]
-              </td>
-            </tr>
-            <tr class="entry-row">
-              <td style="padding:15px;width:100%">
-                <span class="papertitle">중앙대학교 ALCP 자기주도학습 <span class="award-tag">교내 우수상</span></span>
-                1축 위성 자세 제어 시스템 설계 및 구현 스터디 [cite: 21, 209-210]
+              <td style="width:37%; text-align: right;">
+                <img src="images/profile.jpg" style="width:100%; max-width:200px; border-radius: 50%;" alt="profile photo">
               </td>
             </tr>
           </table>
@@ -105,84 +78,99 @@
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:40px 10px 10px 10px">
-          <h2>Selected Projects</h2>
-        </td>
-      </tr>
-      
-      <tr class="entry-row">
-        <td style="padding:20px;width:25%;vertical-align:top">
-          <img src="images/curat3r.jpg" style="width:100%;border-radius:8px;border:1px solid #eee;">
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle"><a href="https://github.com/Underove/Curat3R">Curat3R: 단일 이미지 기반 3D 아카이빙 플랫폼</a></span>
-          <div class="tech-stack">PyTorch, SPAR3D, TRELLIS.2, CLIP, Three.js</div>
-          <ul>
-            <li>CLIP(ViT-B/32) 기반 Semantic Filtering 설계로 부적합 객체 사전 판별 및 리소스 최적화 [cite: 50]</li>
-            <li>SPAR3D 및 TRELLIS.2를 결합한 Dual-Track Inference로 생성 속도/품질 한계 해결 [cite: 51]</li>
-          </ul>
-        </td>
-      </tr>
-
-      <tr class="entry-row">
-        <td style="padding:20px;width:25%;vertical-align:top">
-          <img src="images/pifiri.jpg" style="width:100%;border-radius:8px;border:1px solid #eee;">
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle"><a href="https://github.com/Underove/Pi-FIRI">Pi-FiRi: LLM 결합 실시간 자율 순찰 로봇</a></span>
-          <div class="tech-stack">Raspberry Pi, EfficientDet-Lite1, Solar Pro 2, OpenCV</div>
-          <ul>
-            <li>Flask 기반 분산 컴퓨팅 설계로 기기 연산 부하 해결 및 10 FPS 실시간성 확보 [cite: 89]</li>
-            <li>Solar Pro 2 기반 JSON Schema를 적용하여 자동 순찰 보고서 생성 기능 구현 [cite: 92]</li>
-          </ul>
-        </td>
-      </tr>
-
-      <tr class="entry-row">
-        <td style="padding:20px;width:25%;vertical-align:top">
-          <img src="images/lg_aimers.jpg" style="width:100%;border-radius:8px;border:1px solid #eee;">
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">식음업장 메뉴 수요 예측 AI 모델</span>
-          <div class="tech-stack">Python, Pandas, BiLSTM, Scikit-Learn</div>
-          <ul>
-            <li>휴일 시퀀스 및 주변 시설 내장객 수 등 도메인 특화 외부 변수 기반 피처화 [cite: 121]</li>
-            <li>커스텀 손실 함수(SMAPE) 직접 구현을 통해 모델 성능 약 22% 개선 [cite: 123]</li>
-          </ul>
-        </td>
-      </tr>
-
-      <tr class="entry-row">
-        <td style="padding:20px;width:25%;vertical-align:top">
-          <img src="images/busan_drone.jpg" style="width:100%;border-radius:8px;border:1px solid #eee;">
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">부산대학교 총장배 창의비행체 경진대회 <span class="award-tag">본선 진출</span></span>
-          <div class="tech-stack">Arduino, HC-12, Python, OpenCV, PID Control</div>
-          <ul>
-            <li>고정익 추종 촬영을 위한 2축 짐벌 및 리트랙팅 랜딩기어 시스템 구축 [cite: 193]</li>
-            <li>HC-12 무선 통신 모듈을 활용한 지상 관제소-드론 간 1km 대역 명령 체계 수립 [cite: 205]</li>
-          </ul>
-        </td>
-      </tr>
-
-      <tr class="entry-row">
-        <td style="padding:20px;width:25%;vertical-align:top">
-          <div style="width:100%;height:80px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:12px;color:#888;border:1px solid #eee;">Admin</div>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">데이터톤 및 해커톤 총괄 운영 및 출제</span>
-          <div class="tech-stack">Kaggle API, Python, LLM Prompting</div>
-          <ul>
-            <li>제2회 MixUP 데이터톤 관로 ID별 분할 로직 설계로 리더보드 무결성 확보 [cite: 156, 166]</li>
-            <li>DACON Bias-A-Thon: CoT 기반 프롬프팅으로 LLM 응답 중립성 강화 프로세스 정립 [cite: 172, 177]</li>
-          </ul>
+        <td style="padding: 10px 2.5%;">
+          <h2>Experience & Awards</h2>
+          <table>
+            <tr bgcolor="#f0f8ff">
+              <td style="padding: 20px; vertical-align: middle;">
+                <span class="papertitle">ToBig's (인공지능 및 빅데이터 연합동아리)</span><br>
+                23기 운영부장 및 운영진 활동 수료 (2025.01 – 2026.01)
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 20px; vertical-align: middle;">
+                <span class="papertitle">중앙대학교 항공우주 동아리 MACH</span><br>
+                12기 회전익(드론) 제어팀 활동 및 비행 안정성 제어 시스템 연구
+              </td>
+            </tr>
+            <tr bgcolor="#f0f8ff">
+              <td style="padding: 20px; vertical-align: middle;">
+                <span class="papertitle">중앙대학교 ALCP 자기주도학습 우수상</span><br>
+                1축 위성 자세 제어 시스템 설계 및 구현 스터디 (교내 우수상)
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:50px 10px;text-align:center;font-size:0.8rem;color:#999;border-top:1px solid #eee;">
-          Design and source code adapted from <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://yoongja.github.io/">Yoonji Kim</a>.
+        <td style="padding: 10px 2.5%;">
+          <h2>Selected Projects</h2>
+          <table>
+            <tr bgcolor="#f0f8ff">
+              <td style="padding: 20px; width: 30%;"><img src="images/curat3r.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 70%; vertical-align: middle;">
+                <span class="papertitle">Curat3R: 단일 이미지 기반 3D 아카이빙 플랫폼</span><br>
+                <ul>
+                  <li>CLIP(ViT-B/32) 기반 Semantic Filtering 설계로 부적합 객체 사전 판별 및 리소스 최적화</li>
+                  <li>SPAR3D(0.7초 추론) 및 TRELLIS.2 결합 Dual-Track Inference로 생성 속도/품질 확보</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 20px; width: 30%;"><img src="images/pifiri.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 70%; vertical-align: middle;">
+                <span class="papertitle">Pi-FiRi: LLM 결합 실시간 자율 순찰 및 화재 대응 로봇</span><br>
+                <ul>
+                  <li>Flask 기반 추론·주행 제어 분리 설계로 기기 연산 부하 해결 및 10 FPS 확보</li>
+                  <li>Solar Pro 2 기반 JSON Schema 적용 자동 순찰 보고서 생성 및 Q&A 기능 구현</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr bgcolor="#f0f8ff">
+              <td style="padding: 20px; width: 30%;"><img src="images/lg_aimers.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 70%; vertical-align: middle;">
+                <span class="papertitle">LG Aimers 7기: 식음업장 메뉴 수요 예측 AI 모델 (최종 5위)</span><br>
+                <ul>
+                  <li>휴일 및 주변 관광지 내장객 수 등 외부 변수 피처화 및 BiLSTM 맥락 학습 적용</li>
+                  <li>커스텀 손실 함수(SMAPE) 직접 구현을 통해 성능 약 22% 개선</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 20px; width: 30%;"><img src="images/drone_contest.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 70%; vertical-align: middle;">
+                <span class="papertitle">부산대학교 총장배 창의비행체 경진대회 (본선 진출)</span><br>
+                <ul>
+                  <li>고정익 추종 촬영을 위한 2축 짐벌 및 리트랙팅 랜딩기어 시스템 제어 알고리즘 설계</li>
+                  <li>HC-12 RF 모듈을 활용한 지상 관제소-드론 간 1km 대역 원격 명령 체계 구축</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr bgcolor="#f0f8ff">
+              <td style="padding: 20px; width: 30%;">
+                <div style="width:180px; height:100px; background:#e0f7fa; display:flex; align-items:center; justify-content:center; border-radius:6px; color:#666;">Admin</div>
+              </td>
+              <td style="padding: 20px; width: 70%; vertical-align: middle;">
+                <span class="papertitle">데이터톤 및 해커톤 총괄 운영 및 출제</span><br>
+                <ul>
+                  <li>제2회 MixUP 데이터톤 관로 ID별 분할 로직 설계로 리더보드 무결성 확보</li>
+                  <li>DACON Bias-A-Thon: CoT 기반 프롬프팅으로 LLM 응답 중립성 강화 프로세스 정립</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 60px 2.5% 40px 2.5%; text-align: center; font-size: 12px; color: #999;">
+          Design and source code adapted from <a href="https://jonbarron.info/">Jon Barron</a> 
+          and <a href="https://yoongja.github.io/">Yoonji Kim</a>.
           <br>&copy; 2026 Sangwoo Kim.
         </td>
       </tr>
